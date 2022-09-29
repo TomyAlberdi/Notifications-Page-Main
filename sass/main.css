@@ -94,10 +94,6 @@
 * main .notifications .noti .content p span.gray:hover {
   color: hsl(219deg, 85%, 26%);
 }
-* main .notifications .noti .content p span.blue {
-  color: hsl(219deg, 85%, 26%);
-  font-weight: 600;
-}
 * main .notifications .noti .content p.date {
   color: hsl(217deg, 19%, 73%);
 }
