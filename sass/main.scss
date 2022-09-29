@@ -1,5 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+        .panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            padding-bottom: 3vw;
+            h2 {
+                color: hsl(224, 21%, 14%);
+                span {
+                    background-color: hsl(219, 85%, 26%);
+                    color: white;
+                    border-radius: 5px;
+                    width: 10vw;
+                    padding: 0 2.3vw;
+                    margin-left: 1vw;
+                }
+            }
+            h3 {
+                color: hsl(219, 14%, 63%);
+            }
+        }
+        .notifications {
+            display: flex;
+            flex-direction: column;
+            padding: 4vw;
+            gap: 2vh;
+            .noti {
+                display: flex;
+                align-items: flex-start;
+                gap: 5vw;
+                font-size: 0.82rem;
+                border-radius: 10px;
+                padding: 2vw;
+                &.unread {
+                    background-color: hsl(211, 68%, 94%);
+                    p:nth-child(1)::after {
+                        content: "";
+                        margin-left: 2vw;
+                        margin-bottom: 0.1vw;
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        background-color: hsl(1, 90%, 64%);
+                    }
+                }
+                img {
+                    width: 12vw;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vw;
+                    p {
+                        color: hsl(219, 14%, 63%);
+                        span {
+                            &.name {
+                                color: hsl(224, 21%, 14%);
+                                font-weight: bold;
+                            }
+                            &.gray {
+                                font-weight: 600;
+                                color: hsl(219, 12%, 42%);
+                            }
+                            &.blue {
+                                color: hsl(219, 85%, 26%);
+                                font-weight: 600;
+                            }
+                        }
+                        &.date {
+                            color: hsl(217, 19%, 73%);
+                        }
+                        &.msg {
+                            margin: 1vw;
+                            padding: 3vw;
+                            border: 1px solid hsl(211, 68%, 94%);
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

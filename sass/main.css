@@ -1,5 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+* main {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+* main .panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-bottom: 3vw;
+}
+* main .panel h2 {
+  color: hsl(224deg, 21%, 14%);
+}
+* main .panel h2 span {
+  background-color: hsl(219deg, 85%, 26%);
+  color: white;
+  border-radius: 5px;
+  width: 10vw;
+  padding: 0 2.3vw;
+  margin-left: 1vw;
+}
+* main .panel h3 {
+  color: hsl(219deg, 14%, 63%);
+}
+* main .notifications {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw;
+  gap: 2vh;
+}
+* main .notifications .noti {
+  display: flex;
+  align-items: flex-start;
+  gap: 5vw;
+  font-size: 0.82rem;
+  border-radius: 10px;
+  padding: 2vw;
+}
+* main .notifications .noti.unread {
+  background-color: hsl(211deg, 68%, 94%);
+}
+* main .notifications .noti.unread p:nth-child(1)::after {
+  content: "";
+  margin-left: 2vw;
+  margin-bottom: 0.1vw;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  background-color: hsl(1deg, 90%, 64%);
+}
+* main .notifications .noti img {
+  width: 12vw;
+}
+* main .notifications .noti .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+* main .notifications .noti .content p {
+  color: hsl(219deg, 14%, 63%);
+}
+* main .notifications .noti .content p span.name {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: bold;
+}
+* main .notifications .noti .content p span.gray {
+  font-weight: 600;
+  color: hsl(219deg, 12%, 42%);
+}
+* main .notifications .noti .content p span.blue {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 600;
+}
+* main .notifications .noti .content p.date {
+  color: hsl(217deg, 19%, 73%);
+}
+* main .notifications .noti .content p.msg {
+  margin: 1vw;
+  padding: 3vw;
+  border: 1px solid hsl(211deg, 68%, 94%);
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
