@@ -1,0 +1,41 @@
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: hsl(210, 60%, 98%);
+        padding: 8vh 27vw;
+        main {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1vw;
+            .panel {
+                font-size: 1.2rem;
+                padding: 1.5vw;
+                h2 span {
+                    padding: 0 0.8vw;
+                }
+            }
+            .notifications {
+                padding: 1.5vw;
+                .noti {
+                    padding: 1vw;
+                    gap: 1vw;
+                    font-size: 1rem;
+                    &.unread p:nth-child(1)::after {
+                        margin-left: 0.5vw;
+                    }
+                    img {
+                        width: 3vw;
+                        &.yourPicture {
+                            margin-left: 27%;
+                        }
+                    }
+                    .content {
+                        gap: 0.5vh;
+                        p.msg {
+                            padding: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

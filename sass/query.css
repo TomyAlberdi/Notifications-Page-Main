@@ -1,0 +1,41 @@
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+    padding: 8vh 27vw;
+  }
+  body main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1vw;
+  }
+  body main .panel {
+    font-size: 1.2rem;
+    padding: 1.5vw;
+  }
+  body main .panel h2 span {
+    padding: 0 0.8vw;
+  }
+  body main .notifications {
+    padding: 1.5vw;
+  }
+  body main .notifications .noti {
+    padding: 1vw;
+    gap: 1vw;
+    font-size: 1rem;
+  }
+  body main .notifications .noti.unread p:nth-child(1)::after {
+    margin-left: 0.5vw;
+  }
+  body main .notifications .noti img {
+    width: 3vw;
+  }
+  body main .notifications .noti img.yourPicture {
+    margin-left: 27%;
+  }
+  body main .notifications .noti .content {
+    gap: 0.5vh;
+  }
+  body main .notifications .noti .content p.msg {
+    padding: 1vw;
+  }
+}/*# sourceMappingURL=query.css.map */
