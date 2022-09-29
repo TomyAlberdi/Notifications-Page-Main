@@ -30,6 +30,10 @@
 }
 * main .panel h3 {
   color: hsl(219deg, 14%, 63%);
+  cursor: pointer;
+}
+* main .panel h3:hover {
+  color: hsl(219deg, 85%, 26%);
 }
 * main .notifications {
   display: flex;
@@ -46,7 +50,7 @@
   padding: 2vw;
 }
 * main .notifications .noti.unread {
-  background-color: hsl(211deg, 68%, 94%);
+  background-color: hsl(210deg, 60%, 98%);
 }
 * main .notifications .noti.unread p:nth-child(1)::after {
   content: "";
@@ -62,6 +66,9 @@
 * main .notifications .noti img {
   width: 12vw;
 }
+* main .notifications .noti img.yourPicture {
+  cursor: pointer;
+}
 * main .notifications .noti .content {
   display: flex;
   flex-direction: column;
@@ -70,13 +77,22 @@
 * main .notifications .noti .content p {
   color: hsl(219deg, 14%, 63%);
 }
+* main .notifications .noti .content p span {
+  cursor: pointer;
+}
 * main .notifications .noti .content p span.name {
   color: hsl(224deg, 21%, 14%);
   font-weight: bold;
 }
+* main .notifications .noti .content p span.name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
 * main .notifications .noti .content p span.gray {
   font-weight: 600;
   color: hsl(219deg, 12%, 42%);
+}
+* main .notifications .noti .content p span.gray:hover {
+  color: hsl(219deg, 85%, 26%);
 }
 * main .notifications .noti .content p span.blue {
   color: hsl(219deg, 85%, 26%);
@@ -90,4 +106,8 @@
   padding: 3vw;
   border: 1px solid hsl(211deg, 68%, 94%);
   border-radius: 5px;
+  cursor: pointer;
+}
+* main .notifications .noti .content p.msg:hover {
+  background-color: hsl(211deg, 68%, 94%);
 }/*# sourceMappingURL=main.css.map */
