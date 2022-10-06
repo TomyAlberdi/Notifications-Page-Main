@@ -6,5 +6,5 @@ readAll.addEventListener('click', () => {
     notis.forEach(e => {
         e.classList.remove('unread')
     })
-    contNot.innerHTML = 0
+    contNot.innerHTML = "0"
 })
