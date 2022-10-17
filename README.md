@@ -31,7 +31,7 @@ Users should be able to:
  ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/TomyAlberdi/Notifications-Page-Main)
-- Live Site URL: [Add live site URL here](https://TomyAlberdi.github.io/Notifications-Page-Main/)
+- Live Site URL: [Live Site](https://TomyAlberdi.github.io/Notifications-Page-Main/)
 
 ## My process
 
